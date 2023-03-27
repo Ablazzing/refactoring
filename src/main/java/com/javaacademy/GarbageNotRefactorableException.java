@@ -1,22 +1,16 @@
 package com.javaacademy;
 
+
+import lombok.Builder;
+
+@Builder
 public class GarbageNotRefactorableException extends Exception{
-    public GarbageNotRefactorableException() {
-    }
 
-    public GarbageNotRefactorableException(String message) {
-        super(message);
-    }
+    private String message;
 
-    public GarbageNotRefactorableException(String message, Throwable cause) {
-        super(message, cause);
-    }
+    private Throwable cause;
 
-    public GarbageNotRefactorableException(Throwable cause) {
-        super(cause);
-    }
+    private boolean enableSuppression;
 
-    public GarbageNotRefactorableException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
+    private boolean writableStackTrace;
 }
