@@ -1,7 +1,9 @@
 package com.javaacademy;
 
+
 public enum GarbageType {
     PAPER("Бумага"), GLASS("Стекло"), MIXED("Смешанный мусор");
+
     private final String value;
 
     GarbageType(String value) {

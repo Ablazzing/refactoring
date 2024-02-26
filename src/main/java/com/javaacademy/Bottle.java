@@ -1,8 +1,11 @@
 package com.javaacademy;
 
+import jdk.jfr.DataAmount;
+
 /**
  * Бутылка
  */
+
 public class Bottle {
     private final double volume;
     private double nestedVolume;
